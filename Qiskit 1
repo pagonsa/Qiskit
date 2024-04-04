@@ -1,0 +1,8 @@
+import qiskit
+from qiskit import Aer
+sv_sim = Aer.get_backend('aer_simulator')
+
+qc = qiskit.QuantumCircuit()
+qr = qiskit.QuantumRegister(2, 'a')
+qc.add_register(qr)
+print(qc)
