@@ -7,9 +7,6 @@ from qiskit.visualization import plot_histogram
 sv_sim = Aer.get_backend('aer_simulator')
 
 
-#Tod esto esta en el codigo FOURIER
-
-
 max=10                      #limites integracion
 min=0.001
 T = max-min                 #intervalo de la serie
@@ -38,7 +35,7 @@ for i in range(0, N):
     b[i] = 2/T*np.sum(f(x)*np.sin(2*np.pi*n[i]*x/T)*dx)
 
 
-#Esto esta en el codigo INTEGRAL e INTEGRAL FOURIER
+
 def sin2(a, f, max, min, n):            #Integra un seno cuadrado
     maxd = a*max + f                    #Redefinir maximos y minimos para quitar a y f
     mind = a*min + f
